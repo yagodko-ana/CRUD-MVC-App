@@ -63,8 +63,15 @@ public class PersonDAO {
     }
 
     public void save(Person person) {
-//        person.setId(++PEOPLE_COUNT);
-//        people.add(person);
+        try {
+            Statement statement = connection.createStatement();
+            String SQL = String.format("INSERT INTO Person VALUES(1, '%s', %d, '%s')",
+                    person.getName(), person.getAge(), person.getEmail());
+            statement.executeUpdate(SQL);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void update(int id, Person updatedPerson){
