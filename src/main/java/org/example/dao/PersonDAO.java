@@ -14,7 +14,7 @@ public class PersonDAO {
 
     private static final String URL = "jdbc:postgresql://localhost:5432/mvc_db";
     private static final String USERNAME = "postgres";
-    private static final String PASSWORD = "admin";
+    private static final String PASSWORD = "123";
 
     private static Connection connection;
 
