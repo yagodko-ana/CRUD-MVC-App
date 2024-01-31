@@ -66,7 +66,7 @@ public class PeopleController {
         return "people/edit";
     }
 
-    @PostMapping ("/{id}")
+    @PatchMapping ("/{id}")
     public String update(@ModelAttribute("person") @Valid Person person, BindingResult bindingResult,
                          @PathVariable("id") int id) {
         if (bindingResult.hasErrors())
