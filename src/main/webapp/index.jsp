@@ -8,6 +8,6 @@
 
 <body>
 <h2>Hello World!</h2>
-<a href="/people">Go to the main page of app</a>
+<a href="/CrudMVCApp/people">Go to the main page of app</a>
 </body>
 </html>
